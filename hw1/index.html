@@ -19,7 +19,7 @@
   <header class="header center">
     <!-- BEGIN PART 2 -->
     <h3>
-      <a class="link" href="\">DT</a>
+      <a class="link" href="/">DT</a>
     </h3>
     <!-- END PART 2 -->
     <nav class="nav center">
@@ -44,7 +44,8 @@
       <!-- 
         5.1: What does this button tag correspond to on the site? 
       
-      
+       This button tag corresponds to the light/dark theme button on the top-right of the website, indicated by either a moon or a sun icon,
+       and changes the theme of the website to dark or light theme.
       -->
 
       <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
@@ -57,7 +58,10 @@
         make it so that this button appears on screen? 
         Hint: remember what @media (max-width: 600px) means.
 
-
+        The reason that there are two classes for nav__hamburger is related to the @media query each class is wrapped around in the CSS file.
+        @media (max-width: 600px) defines the CSS styles that the program should look like if the media/screen the user is looking at the 
+        website at is smaller than 600px, which is why it includes the hamburger navigation tool, since there isn't enough space to show
+        the three different sub-navs. Therefore, to see the hamburger display, you just have to shrink your screen so that it's width is below 600px.
        -->
 
       <!-- END PART 5 -->
@@ -67,6 +71,15 @@
   <main>
     <div class="about center">
       <!-- BEGIN PART 6 -->
+      <h1>Hi, I'm <span class="about__name">Dinesh!</span></h1>
+      <div style="display: inline-block;">
+        <h2 class="about__role typed-out">EECS @ UC Berkeley | Google CSSI '21&nbsp</h2>
+      </div>
+      <p class="about__desc">
+        I'm a student at UC Berkeley studying Electrical Engineering and Computer Science (EECS). 
+        I have experience working in software development roles at various tech companies, so feel free to 
+        reach out if you're interested!
+      </p>
       <!-- END PART 6 -->
       <div class="about__contact center">
         <a href="https://example.com">
@@ -106,6 +119,48 @@
             <i aria-hidden="true" class="fas fa-external-link-alt"></i>
           </a>
         </div>
+
+        <div class="project">
+          <h3>Project 1</h3>
+          <p class="project__description">
+            Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
+            sapiente debitis labore sed ipsam Mollitia repellat illum quod
+            unde beatae Quis
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Python</li>
+            <li class="project__stack-item">Java</li>
+            <li class="project__stack-item">JavaScript</li>
+          </ul>
+
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <a href="https://example.com" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="project">
+          <h3>Project 1</h3>
+          <p class="project__description">
+            Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
+            sapiente debitis labore sed ipsam Mollitia repellat illum quod
+            unde beatae Quis
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Python</li>
+            <li class="project__stack-item">Java</li>
+            <li class="project__stack-item">JavaScript</li>
+          </ul>
+
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <a href="https://example.com" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
         <!-- END PART 8 -->
       </div>
     </section>
@@ -115,9 +170,11 @@
       <!-- BEGIN PART 10 -->
       <h2 class="section__title">Skills</h2>
       <ul class="skills__list">
-        <li class="skills__list-item btn btn--plain"></li>
-        <li class="skills__list-item btn btn--plain"></li>
-        <li class="skills__list-item btn btn--plain"></li>
+        <li class="skills__list-item btn btn--plain">Skill 1</li>
+        <li class="skills__list-item btn btn--plain">Skill 1</li>
+        <li class="skills__list-item btn btn--plain">Skill 1</li>
+        <li class="skills__list-item btn btn--plain">Skill 1</li>
+        <li class="skills__list-item btn btn--plain">Skill 1</li>
       </ul>
       <!-- END PART 10 -->
     </section>
@@ -132,7 +189,15 @@
   <footer class="footer">
     <!-- BEGIN PART 12 -->
     <a href="/" class="link footer__link">
-      Created By Your Name
+      Created By Dinesh Thirumavalavan
+    </a>
+    <br>Berkeley, CA<br><br>
+    <a href="https://github.com/" aria-label="github" class="link link--icon">
+      <i aria-hidden="true" class="fab fa-github"></i>
+    </a>
+
+    <a href="https://linkedin.com/in/" aria-label="linkedin" class="link link--icon">
+      <i aria-hidden="true" class="fab fa-linkedin"></i>
     </a>
     <!-- END PART 12 -->
   </footer>
