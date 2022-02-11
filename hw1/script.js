@@ -61,3 +61,122 @@ const scrollUp = () => {
 }
 
 document.addEventListener('scroll', scrollUp)
+
+
+let skills = document.getElementsByClassName("skills__list-item");
+let title = document.getElementById("skills-title");
+let skillsLogo = document.getElementById("skills-logo");
+let animateDiv = document.getElementById('animate-div');
+
+let skillsDesc1 = document.getElementById('skills-desc-1');
+let skillsDesc2 = document.getElementById('skills-desc-2');
+
+// Python
+skills[0].addEventListener("click", () => {
+
+	if(!skills[0].classList.contains("is-clicked")) {
+		removeClicked();
+		skills[0].classList.add("is-clicked");
+		animateDiv.classList.add("animate__backOutDown");
+	
+		animateDiv.addEventListener('animationend', () => {
+			title.innerHTML = "Python";
+			skillsLogo.src="assets/python.png";
+
+			skillsDesc1.innerHTML = "I have significant experience working in Python both from university classes and personal projects.";
+			skillsDesc2.innerHTML = "CS 61A - Structure and Interpretation of Computer Programs in Python (A)";
+
+			animateDiv.classList.remove("animate__backOutDown");
+			animateDiv.classList.add("animate__backInUp");
+		});
+	}
+});
+
+// Java
+skills[1].addEventListener("click", () => {
+
+	if(!skills[1].classList.contains("is-clicked")) {
+		removeClicked();
+		skills[1].classList.add("is-clicked");
+		animateDiv.classList.add("animate__backOutDown");
+	
+		animateDiv.addEventListener('animationend', () => {
+			title.innerHTML = "Java";
+			skillsLogo.src="assets/java.png";
+
+			skillsDesc1.innerText = "I have significant experience working in Java both from university classes and personal projects."
+			skillsDesc2.innerHTML = "CS 61B - Data Structures & Algorithms in Java (In Progress)";
+
+			animateDiv.classList.remove("animate__backOutDown");
+			animateDiv.classList.add("animate__backInUp");
+		});
+	}
+});
+
+// iOS
+skills[2].addEventListener("click", () => {
+	if(!skills[2].classList.contains("is-clicked")) {
+		removeClicked();
+		skills[2].classList.add("is-clicked");
+		animateDiv.classList.add("animate__backOutDown");
+	
+		animateDiv.addEventListener('animationend', () => {
+			title.innerHTML = "Mobile Development";
+			skillsLogo.src="assets/iOS.png";
+
+			skillsDesc1.innerText = "I have significant experience working with iOS Development both from university classes and personal projects."
+			skillsDesc2.innerHTML = "CIS 55 - iOS Development (A) [Foothill College]";
+
+			animateDiv.classList.remove("animate__backOutDown");
+			animateDiv.classList.add("animate__backInUp");
+		});
+	}
+});
+
+// PyTorch
+skills[3].addEventListener("click", () => {
+	if(!skills[3].classList.contains("is-clicked")) {
+		removeClicked();
+		skills[3].classList.add("is-clicked");
+		animateDiv.classList.add("animate__backOutDown");
+	
+		animateDiv.addEventListener('animationend', () => {
+			title.innerHTML = "PyTorch";
+			skillsLogo.src="assets/pytorch.png";
+
+			skillsDesc1.innerText = "I have significant experience working in PyTorch both from university classes and personal projects."
+			skillsDesc2.innerHTML = "MaskOn<br>RecycleHub";
+
+			animateDiv.classList.remove("animate__backOutDown");
+			animateDiv.classList.add("animate__backInUp");
+		});
+	}
+});
+
+// Web
+skills[4].addEventListener("click", () => {
+	if(!skills[4].classList.contains("is-clicked")) {
+		removeClicked();
+		skills[4].classList.add("is-clicked");
+		animateDiv.classList.add("animate__backOutDown");
+	
+		animateDiv.addEventListener('animationend', () => {
+			title.innerHTML = "Web Development";
+			skillsLogo.src="assets/web.png";
+
+			skillsDesc1.innerText = "I have significant experience working with Web Development both from university classes and personal projects."
+			skillsDesc2.innerHTML = "Google CSSI<br>Health Pal";
+
+			animateDiv.classList.remove("animate__backOutDown");
+			animateDiv.classList.add("animate__backInUp");
+		});
+	}
+});
+
+function removeClicked() {
+	skills[0].classList.remove("is-clicked");
+	skills[1].classList.remove("is-clicked");
+	skills[2].classList.remove("is-clicked");
+	skills[3].classList.remove("is-clicked");
+	skills[4].classList.remove("is-clicked");
+}

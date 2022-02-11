@@ -108,6 +108,12 @@ button {
   width: 0;
 }
 
+.logo {
+  width:150px;
+  height:150px;
+  border-radius: 50%;
+}
+
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
@@ -117,6 +123,32 @@ button {
   0% { border-color: transparent }
   50% { border-color: inherit; }
   100% { border-color: transparent }
+}
+
+.skills-description {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.skills-item {
+  margin-left: 30px;
+}
+
+.is-clicked {
+  color: var(--clr-primary);
+}
+
+.skills-text {
+  text-align:left;
+}
+
+.skills-title {
+  text-transform: uppercase;
+}
+
+#skills-title {
+  margin-bottom: -10px;
 }
 
 /*===================
@@ -131,6 +163,7 @@ button {
 
 .link:hover {
   color: var(--clr-primary);
+  cursor: pointer;
 }
 
 /* BEGIN PART 4 */
@@ -336,6 +369,7 @@ main {
 
 .project:hover {
   transform: translateY(-7px);
+  cursor: pointer;
 }
 
 .project__description {
@@ -356,6 +390,11 @@ main {
   color: var(--clr-fg-alt);
 }
 
+.project__stack-item:hover {
+  color: var(--clr-primary);
+  cursor: pointer;
+}
+
 .project .link--icon {
   margin-left: 0.5em;
 }
@@ -363,9 +402,11 @@ main {
 /* BEGIN PART 11 */
 
 .skills__list {
-  max-width: 450px;
+  max-width: 500px;
+  max-height: 50px;
   width: 95%;
   margin: 0 auto;
+  margin-top: -25px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -374,6 +415,10 @@ main {
 .skills__list-item {
   margin-top: 20px;
   margin-left: 10px;
+}
+
+.skills-div {
+  max-width: 1000px;
 }
 
 /* END PART 11 */
