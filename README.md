@@ -1,4 +1,4 @@
-# Repositor for CubStart projects
+# Repository for CubStart projects
 Author: Dinesh Thirumavalavan (UCB EECS 2025)
 
 <hr>
