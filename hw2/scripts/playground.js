@@ -1,5 +1,7 @@
 // BEGIN PART 2
-
+const countDisplay = document.getElementById("count-display");
+const subtractButton = document.getElementById("subtract");
+const addButton = document.getElementById("add");
 // END PART 2
 
 // BEGIN PART 3
