@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
+  <!-- BEGIN PART 1 -->
+  <link rel="stylesheet" href="styles.css">
+  <title>Dinesh</title>
+  <!-- END PART 1 -->
+</head>
+
+<body class="light" id="top">
+  <header class="header center">
+    <!-- BEGIN PART 2 -->
+    <h3>
+      <a class="link" href="/">DT</a>
+    </h3>
+    <!-- END PART 2 -->
+    <nav class="nav center">
+      <ul class="nav__list center">
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#projects">Projects</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#skills">Skills</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <!-- BEGIN PART 5 -->
+
+      <button type="button" aria-label="toggle theme" class="btn btn--icon">
+        <i id="btn-theme" class="fas fa-moon"></i>
+      </button>
+
+      <!-- 
+        5.1: What does this button tag correspond to on the site? 
+      
+       This button tag corresponds to the light/dark theme button on the top-right of the website, indicated by either a moon or a sun icon,
+       and changes the theme of the website to dark or light theme.
+      -->
+
+      <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- 
+        5.2: Try Ctrl-F in styles.css and look the class 'nav__hamburger'. You'll notice that it
+        appears in 2 places. Why is one of the rules 'display: none' on one instance? How do you
+        make it so that this button appears on screen? 
+        Hint: remember what @media (max-width: 600px) means.
+
+        The reason that there are two classes for nav__hamburger is related to the @media query each class is wrapped around in the CSS file.
+        @media (max-width: 600px) defines the CSS styles that the program should look like if the media/screen the user is looking at the 
+        website at is smaller than 600px, which is why it includes the hamburger navigation tool, since there isn't enough space to show
+        the three different sub-navs. Therefore, to see the hamburger display, you just have to shrink your screen so that it's width is below 600px.
+       -->
+
+      <!-- END PART 5 -->
+    </nav>
+  </header>
+
+  <main>
+    <div class="about center">
+      <!-- BEGIN PART 6 -->
+      <h1 class="animate__animated animate__bounce">Hi, I'm <span class="about__name">Dinesh!</span></h1>
+      <div style="display: inline-block;">
+        <h2 class="about__role typed-out">EECS @ UC Berkeley | Google CSSI '21&nbsp</h2>
+      </div>
+      <p class="about__desc">
+        I'm a student at UC Berkeley studying Electrical Engineering and Computer Science (EECS). 
+        I have experience working in software development roles at various tech companies, so feel free to 
+        reach out if you're interested!
+      </p>
+      <!-- END PART 6 -->
+      <div class="about__contact center">
+        <a href="https://drive.google.com/file/d/184sqzQdydRJ4iiz7B2wLsyydtMb9luiD/view?usp=sharing">
+          <span class="btn btn--outline"><i aria-hidden="true" class="fas fa-file"></i>&nbsp&nbspResume</span>
+        </a>
+
+        <a href="https://github.com/Dinesh-thiruma" aria-label="github" class="link link--icon">
+          <i aria-hidden="true" class="fab fa-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/dinesh-thiruma/" aria-label="linkedin" class="link link--icon">
+          <i aria-hidden="true" class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+    <section id="projects" class="section projects">
+      <h2 class="section__title">Projects</h2>
+      <div class="projects__grid">
+        <!-- BEGIN PART 8 -->
+        <div class="project">
+          <img class="logo" src="assets/MaskOn.png">
+          <h3>MaskOn</h3>
+          <p class="project__description">
+            An IOS application that aims to help businesses by reducing the need for having employees monitor customers who enter a store by automatically checking if they are wearing a mask.  
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Swift</li>
+            <li class="project__stack-item">PyTorch</li>
+            <li class="project__stack-item">iOS</li>
+            <li class="project__stack-item">Machine Learning</li>
+          </ul>
+
+          <a href="https://github.com/Dinesh-thiruma/MaskOn" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+        </div>
+
+        <div class="project">
+          <img class="logo" src="assets/HealthPal.png">
+          <h3>Health Pal</h3>
+          <p class="project__description">
+            HealthPal is an online nutritionist, dietician, and fitness coach all in one! This project is the final project created from scratch in one week by 3 CSSI '21 alumni.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">HTML</li>
+            <li class="project__stack-item">CSS</li>
+            <li class="project__stack-item">JavaScript</li>
+            <li class="project__stack-item">FireBase</li>
+            <li class="project__stack-item">Web Development</li>
+          </ul>
+
+          <a href="https://github.com/Dinesh-thiruma/health-pal" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <a href="https://health-pal-6b469.web.app/" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="project">
+          <img class="logo" src="assets/RecycleHub.png">
+          <h3>RecycleHub</h3>
+          <p class="project__description">
+            Helps make recycling easier by using a neural network to detect what type of trash a user takes an image of. Also gives an estimated dollar amount that the user could recieve for recycling the item.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Swift</li>
+            <li class="project__stack-item">PyTorch</li>
+            <li class="project__stack-item">iOS</li>
+            <li class="project__stack-item">Machine Learning</li>
+          </ul>
+
+          <a href="https://github.com/Dinesh-thiruma/RecycleHub" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          </a>
+        </div>
+        <!-- END PART 8 -->
+      </div>
+    </section>
+
+
+    <section class="section skills" id="skills">
+      <!-- BEGIN PART 10 -->
+      <h2 class="section__title">Skills</h2>
+      <ul class="skills__list">
+        <li class="skills__list-item btn btn--plain is-clicked">Python</li>
+        <li class="skills__list-item btn btn--plain">Java</li>
+        <li class="skills__list-item btn btn--plain">iOS</li>
+        <li class="skills__list-item btn btn--plain">PyTorch</li>
+        <li class="skills__list-item btn btn--plain">Web</li>
+      </ul><br><br>
+
+      <div class="section project skills-div">
+        <div class="animate__animated" id="animate-div">
+          <h2 class="section__title" id="skills-title">Python</h2>
+          <div class="skills-description">
+            <img id="skills-logo" class="skills-item" width="200" height="200" src="assets/python.png">
+            <div class="skills-text">
+              <p class="skills-item" id="skills-desc-1">
+                I have significant experience working in Python both from university classes and personal projects.
+              </p><br>
+              <h5 class="skills-item skills-title">
+                Relevant experience:
+              </h5>
+              <p class="skills-item" id="skills-desc-2">
+                CS 61A - Structure and Interpretation of Computer Programs in Python (A)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END PART 10 -->
+    </section>
+    <section class="section contact center" id="contact">
+      <h2 class="section__title">Contact</h2>
+      <a href="mailto:dineshthiruma@berkeley.edu">
+        <span class="btn btn--outline"><i aria-hidden="true" class="fas fa-envelope"></i>&nbsp&nbspSend me an email!</span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <!-- BEGIN PART 12 -->
+    <a href="/" class="link footer__link">
+      Created By Dinesh Thirumavalavan
+    </a>
+    <br>Berkeley, CA<br><br>
+    <a href="https://github.com/" aria-label="github" class="link link--icon">
+      <i aria-hidden="true" class="fab fa-github"></i>
+    </a>
+
+    <a href="https://linkedin.com/in/" aria-label="linkedin" class="link link--icon">
+      <i aria-hidden="true" class="fab fa-linkedin"></i>
+    </a>
+    <!-- END PART 12 -->
+  </footer>
+
+
+  <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
