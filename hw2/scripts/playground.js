@@ -8,6 +8,16 @@ const addButton = document.getElementById("add");
 
 let count = 0;
 
+addButton.addEventListener("click", () => {
+  count += 1;
+  countDisplay.innerHTML = count;
+});
+
+subtractButton.addEventListener("click", () => {
+  count -= 1;
+  countDisplay.innerHTML = count;
+});
+
 // END PART 3
 
 // BEGIN PART 5
