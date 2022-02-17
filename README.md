@@ -3,6 +3,12 @@ Author: Dinesh Thirumavalavan (UCB Berkeley EECS 2024)
 
 # Projects
 
+## HW #2: Bored Button
+
+### Modifications
+
+Restyled the page layount and imported the Bulma CSS library. Used styles to animate the bored button, incorporated icons from FontAwesome, and created a card that dynamically stored new information from the Bored API.
+
 ## HW #1: Personal Portfolio
 
 ### Modification #1: Title
