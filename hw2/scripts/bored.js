@@ -16,13 +16,16 @@ boredButton.addEventListener("click", async () => {
   // get activity from API
   // process this data into 'p' elements
   // append the text elements as children of the card
-  card.replaceChildren();
   const activity = await fetchActivity();
   // BEGIN PART 8
   for (const [key, value] of Object.entries(activity)) {
-    const detail = document.createElement("p");
-    detail.innerHTML = key + ": " + value;
-    card.appendChild(detail);
+    if(key == "activity") {
+      document.getElementById("card-header").innerText = value;
+    }else {
+      // const detail = document.createElement("p");
+      // detail.innerHTML = key + ": " + value;
+      // card.appendChild(detail);
+    }
   }
   // END PART 8
 });

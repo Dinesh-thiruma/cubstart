@@ -7,6 +7,8 @@
     <title>Bored Button</title>
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/bored.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/d4dbed8638.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="navbar">
@@ -14,10 +16,49 @@
       <a href="playground.html">Playground</a>
       <a href="bored.html">Bored Button</a>
     </div>
-    <section class="container">
-      <button class="button" id="bored-button">I'm Bored</button>
-      <div id="card"></div>
-    </section>
+
+    <p class="mt-6 mb-6 has-text-centered">
+      <a class="button is-medium is-info is-outlined" id="bored-button">
+          <span class="icon">
+              <img class="image is-24x24" src="assets/bored.png"/>
+          </span>
+          <span>I'm Bored</span>
+      </a>
+    </p>
+
+    <div class="column center is-4">
+      <div id="card" class="card">
+        <header class="card-header">
+          <p id="card-header" class="card-header-title is-centered">
+            Activity Name
+          </p>
+          <button class="card-header-icon" aria-label="more options">
+            <span class="icon">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </header>
+        <div class="card-content has-text-centered">
+          <div class="card-image p-6">
+            <figure class="image">
+              <img
+                src="assets/bored.png"
+                alt="Placeholder image"
+              />
+            </figure>
+          </div>
+          <div class="content">
+            Type: Recreational<br>
+            Participants: 1<br>
+            Price: 0<br>
+            Link: link<br>
+            Key: KEY<br>
+            Accessibility: 0.9<br>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </body>
   <script src="scripts/bored.js"></script>
 </html>
