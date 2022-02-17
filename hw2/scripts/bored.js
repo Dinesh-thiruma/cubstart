@@ -19,6 +19,10 @@ boredButton.addEventListener("click", async () => {
   card.replaceChildren();
   const activity = await fetchActivity();
   // BEGIN PART 8
-
+  for (const [key, value] of Object.entries(activity)) {
+    const detail = document.createElement("p");
+    detail.innerHTML = key + ": " + value;
+    card.appendChild(detail);
+  }
   // END PART 8
 });
