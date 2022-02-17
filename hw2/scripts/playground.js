@@ -29,11 +29,23 @@ const taskList = document.getElementById("tasks");
 
 // BEGIN PART 6
 
-submitButton.addEventListener("click", () => {});
+submitButton.addEventListener("click", () => {
+  if (taskName.value != "") {
+    const task = document.createElement("li");
+    task.innerHTML = taskName.value;
+    taskList.appendChild(task);
+  }
+});
 
 clearButton.addEventListener("click", () => {
   taskList.replaceChildren();
   taskName.value = "";
+});
+
+taskName.addEventListener("input", () => {
+  if (taskName.value == "Cal Hacks") {
+    countDisplay.style.color = "steelblue";
+  }
 });
 
 // END PART 6
