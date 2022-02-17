@@ -21,7 +21,10 @@ subtractButton.addEventListener("click", () => {
 // END PART 3
 
 // BEGIN PART 5
-
+const taskName = document.getElementById("task-name");
+const submitButton = document.getElementById("submit");
+const clearButton = document.getElementById("clear");
+const taskList = document.getElementById("tasks");
 // END PART 5
 
 // BEGIN PART 6
