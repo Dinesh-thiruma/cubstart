@@ -1,8 +1,18 @@
-# Repositor for CubStart projects
-Author: Dinesh Thirumavalavan (UCB EECS 2025)
-
-<hr>
+# Repository for CubStart projects
+Author: Dinesh Thirumavalavan (UCB Berkeley EECS 2024)
 
 # Projects
 
-HW #1: Personal Portfolio
+## HW #1: Personal Portfolio
+
+### Modification #1: Title
+
+Added TypeWriter effect to the role section of the title, and implemented animate library to add bounce animations to the title. Also fixed links to GitHub, LinkedIn, and to the resume, and added an icon to the resume button.
+
+### Modification #2: Projects
+
+Added images to each of the project cards, and added relevant information about 3 of my CS projects to each of the cards. Fixed GitHub links for each project, and added hover/cursor effects for the tags underneath the projects.
+
+### Modification #3: Skills
+
+Added a new section for a detailed description of each of my skills (so far the descriptions are basic, but will work on fleshing those out in the future). Also used JavaScript to create buttons on the original skills that toggle through different information about the section. Finally, added an icon to the contact me button, and fixed it to send to the right email.
