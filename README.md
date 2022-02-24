@@ -3,6 +3,12 @@ Author: Dinesh Thirumavalavan (UCB Berkeley EECS 2024)
 
 # Projects
 
+## HW #3: Generation w/ Computer Vision
+
+### Modifications
+
+Fixed the page layout to center the image and ensure that the caption wasn't cut off and that the image didn't go over the caption. Also added a transitioning linear gradient background as the background of the page.
+
 ## HW #2: Bored Button
 
 ### Modifications
